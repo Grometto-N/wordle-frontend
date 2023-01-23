@@ -10,7 +10,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	width: 100vw;
-	height: 8vh;
+	height: 7vh;
 	border: 1px #D3D6DA solid;
 }
 
@@ -28,8 +28,8 @@ body {
 }
 
 #newGame {
-	width: 200px;
-	height: 40px;
+	width: 15vw;
+	height: 5vh;
 	border: 1px #8a8a8a solid;
 	background-color: black;
 	border-radius: 4px;
@@ -42,15 +42,15 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 25px;
+	margin-top: 5px;
 }
 
 .letter-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
-	width: 100px;
+	height: 13vh;
+	width: 13vh;
 	border: 2px solid black;
 	margin: 2px;
 	font-size: 40px;
@@ -58,38 +58,18 @@ body {
 	font-weight: 700;
 }
 
-.filled-box{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	margin: 2px;
-	font-size: 40px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
 
 .letter-row {
 	display: flex;
 }
 
 #result {
-	margin-top: 25px;
+	margin-top: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 24px;
 	font-weight: bold;
-}
-
-.won {
-	color: green;
-}
-
-.loose {
-	color: red;
 }
 
 #divResult {
