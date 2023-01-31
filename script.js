@@ -102,7 +102,7 @@ function checkWord(table_position){
 // click sur le bouton new game 
 document.querySelector('#newGame').addEventListener('click',
   function () {
-    fetch('http://localhost:3000/game/new')
+    fetch('https://wordle-backend-chi.vercel.app/game/new')
     .then(response => response.json())
     .then(data => { 
         // récupération du mot et de l'id de la partie
