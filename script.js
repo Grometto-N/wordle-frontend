@@ -103,6 +103,13 @@ function checkWord(table_position){
 // click sur le bouton new game 
 document.querySelector('#newGame').addEventListener('click',
   function () {
+    // remise à zéro des variable au cas où 
+    the_word = ''; 
+    nbLetters = 0; 
+    life = 6;      
+    row_indice = 0; 
+    finish = false; 
+    document.querySelector("#result").textContent = "";
     // on affiche un message le temps de charger le mot
     document.querySelector("#game-board").innerHTML = 'Chargement du mot...';
     // 
