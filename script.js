@@ -23,6 +23,7 @@ function oneRow(nbLettersWord){
 
 // fonction permettant d'afficher la grille
 function grid(nbLettersWord){
+  document.querySelector("#game-board").innerHTML = '';
   for(let i=1;i<=6;i++){
     document.querySelector("#game-board").innerHTML += oneRow(nbLettersWord);
   } 
@@ -102,6 +103,9 @@ function checkWord(table_position){
 // click sur le bouton new game 
 document.querySelector('#newGame').addEventListener('click',
   function () {
+    // on affiche un message le temps de charger le mot
+    document.querySelector("#game-board").innerHTML = 'Chargement du mot...';
+    // 
     fetch('https://wordle-backend-chi.vercel.app/game/new')
     .then(response => response.json())
     .then(data => { 
